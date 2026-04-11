@@ -1,7 +1,6 @@
 const menuLinks = document.querySelectorAll(".menu a");
 const nameLink = document.querySelector(".name");
 const panels = document.querySelectorAll(".panel");
-const projectThumbs = document.querySelectorAll(".project-thumb");
 
 function showPanel(id) {
   panels.forEach((panel) => {
@@ -34,12 +33,5 @@ if (nameLink) {
     showPanel(nameLink.dataset.section);
   });
 }
-
-projectThumbs.forEach((thumb) => {
-  thumb.addEventListener("click", (event) => {
-    event.preventDefault();
-    showPanel(thumb.dataset.project);
-  });
-});
 
 showPanel("home");

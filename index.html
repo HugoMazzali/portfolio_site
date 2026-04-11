@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hugo Mazzali</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="site">
     <aside class="sidebar">
       <a href="#" class="name" data-section="home">Hugo Mazzali</a>
+
       <nav class="menu">
         <a href="#" data-section="about">about</a>
         <a href="#" data-section="education">education</a>
@@ -20,177 +21,120 @@
     </aside>
 
     <main class="content">
-      <section class="panel active" id="home">
+      <section id="home" class="panel active">
         <div class="home-page">
-          <img src="images/home.jpg" alt="Home image" class="home-image" />
+          <img src="images/profile-pic.jpg" alt="Home image" class="home-image">
           <p class="home-subtext">
             A short line of text can go here.
           </p>
         </div>
       </section>
 
-      <section class="panel text-panel" id="about">
+      <section id="about" class="panel">
         <div class="text-page">
-          <div class="text-header">About</div>
+          <p class="text-header">About</p>
           <p>
-            I am a designer, engineer, and artist interested in perception,
-            material form, technology, and visual culture.
+            I am a designer, engineer, and artist interested in perception, material form,
+            technology, and visual culture.
           </p>
         </div>
       </section>
 
-      <section class="panel text-panel" id="education">
+      <section id="education" class="panel">
         <div class="text-page">
-          <div class="text-header">Education</div>
+          <p class="text-header">Education</p>
+          <p>Cornell University</p>
+          <p>Mechanical Engineering</p>
+          <p>College Scholar Program</p>
+        </div>
+      </section>
+
+      <section id="cv" class="panel">
+        <div class="text-page">
+          <p class="text-header">CV</p>
           <p>
-            Cornell University<br />
-            Mechanical Engineering<br />
-            College Scholar Program
+            <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">Open CV PDF</a>
           </p>
         </div>
       </section>
 
-      <section class="panel text-panel" id="cv">
+      <section id="contact" class="panel">
         <div class="text-page">
-          <div class="text-header">CV</div>
+          <p class="text-header">Contact</p>
+          <p>hugo@example.com</p>
           <p>
-            <a href="assets/Hugo_Mazzali_CV.pdf" target="_blank">Open CV PDF</a>
+            <a href="https://github.com/HugoMazzali" target="_blank" rel="noopener noreferrer">GitHub</a>
+            /
+            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            /
+            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
           </p>
         </div>
       </section>
 
-      <section class="panel text-panel" id="contact">
-        <div class="text-page">
-          <div class="text-header">Contact</div>
-          <p>
-            hugo@example.com<br />
-            GitHub / LinkedIn / Instagram
-          </p>
-        </div>
-      </section>
+      <section id="projects" class="panel">
+        <div class="projects-wrap">
+          <div class="projects-grid">
+            <a class="project-thumb" href="projects/tie-rods.html">
+              <img src="images/projects_preview.JPG" alt="Tie Rods project preview">
+              <span class="project-label">Tie Rods</span>
+            </a>
 
-      <section class="panel" id="projects">
-        <div class="projects-grid">
-          <a href="#" class="project-thumb" data-project="project1">
-            <img src="images/028.jpg" alt="Project 1" />
-            <div class="project-label">Tie Rods</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project2">
-            <img src="images/project2.jpg" alt="Project 2" />
-            <div class="project-label">Suspension Links</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project3">
-            <img src="images/028.jpg" alt="Project 3" />
-            <div class="project-label">LQR State Model</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project4">
-            <img src="images/028.jpg" alt="Project 4" />
-            <div class="project-label">Automatic FAU Assembly</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project5">
-            <img src="images/028.jpg" alt="Project 5" />
-            <div class="project-label">Torque Wrench</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project6">
-            <img src="images/project6.jpg" alt="Project 6" />
-            <div class="project-label">MATLAB Vehicle Dynamics</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project7">
-            <img src="images/project7.jpg" alt="Project 7" />
-            <div class="project-label">Honda CX500</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project8">
-            <img src="images/project8.jpg" alt="Project 8" />
-            <div class="project-label">Film Club</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project9">
-            <img src="images/project9.jpg" alt="Project 9" />
-            <div class="project-label">Blender</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project10">
-            <img src="images/project10.jpg" alt="Project 10" />
-            <div class="project-label">Reading</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project11">
-            <img src="images/project11.jpg" alt="Project 11" />
-            <div class="project-label">Listening</div>
-          </a>
-          <a href="#" class="project-thumb" data-project="project12">
-            <img src="images/028.jpg" alt="Project 12" />
-            <div class="project-label">Blog</div>
-          </a>
-        </div>
-      </section>
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/systems_cover_image.png" alt="Project preview">
+              <span class="project-label">LQR State Model</span>
+            </a>
 
-      <section class="panel text-panel" id="project1">
-        <div class="text-page">
-          <div class="text-header">Project One</div>
-          <p>
-            Short description of the project. Medium, year, context, and concept.
-          </p>
-        </div>
-      </section>
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">Automatic FAU Assembly</span>
+            </a>
 
-      <section class="panel text-panel" id="project2">
-        <div class="text-page">
-          <div class="text-header">Project Two</div>
-          <p>
-            Short description of the project.
-          </p>
-        </div>
-      </section>
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">Torque Wrench</span>
+            </a>
 
-      <section class="panel text-panel" id="project3">
-        <div class="text-page">
-          <div class="text-header">Project Three</div>
-          <p>
-            Short description of the project.
-          </p>
-        </div>
-      </section>
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">MATLAB Vehicle Dynamics</span>
+            </a>
 
-      <section class="panel text-panel" id="project4">
-        <div class="text-page">
-          <div class="text-header">Project Four</div>
-          <p>
-            Short description of the project.
-          </p>
-        </div>
-      </section>
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">Honda CX500</span>
+            </a>
 
-      <section class="panel text-panel" id="project5">
-        <div class="text-page">
-          <div class="text-header">Project Five</div>
-          <p>
-            Short description of the project.
-          </p>
-        </div>
-      </section>
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">Film Club</span>
+            </a>
 
-      <section class="panel text-panel" id="project6">
-        <div class="text-page">
-          <div class="text-header">Project Six</div>
-          <p>
-            Short description of the project.
-          </p>
-        </div>
-      </section>
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">Blender</span>
+            </a>
 
-      <section class="panel text-panel" id="project7">
-        <div class="text-page">
-          <div class="text-header">Project Seven</div>
-          <p>
-            Short description of the project.
-          </p>
-        </div>
-      </section>
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">Reading</span>
+            </a>
 
-      <section class="panel text-panel" id="project8">
-        <div class="text-page">
-          <div class="text-header">Project Eight</div>
-          <p>
-            Short description of the project.
-          </p>
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">Listening</span>
+            </a>
+
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">Blog</span>
+            </a>
+
+            <a class="project-thumb" href="projects/template.html">
+              <img src="images/project_placeholder.jpg" alt="Project preview">
+              <span class="project-label">WIP</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
