@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tie Rods | Hugo Mazzali</title>
+  <title>Tie Rods and Steering Column | Hugo Mazzali</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body class="project-page-body">
@@ -17,17 +17,46 @@
     <a class="back-link" href="../index.html#projects">← Back to home</a>
 
     <header class="project-hero">
-      <p class="project-meta">Mechanical Design / Cornell BAJA SAE</p>
-      <h1 class="project-title">Tie Rods</h1>
+      <p class="project-meta">Mechanical Design / Cornell Baja SAE</p>
+      <h1 class="project-title">Tie Rods and Steering Column</h1>
       <p class="project-intro">
-        Replace this with your actual summary of the tie rods project. Keep it concise and clear.
+        As a member of the suspension subteam of Cornell Baja Racing, I designed, analysed, 
+        manufactured, and tested the tierods and steering column for our vehicle TG21. This car
+        went on to win the memorial Mike Schmidt Award, having finished first in all 3 SAE competitions
+        in the 2025 Baja SAE season.
       </p>
     </header>
 
     <section class="project-section">
       <h2 class="project-section-title">Overview</h2>
       <p>
-        Replace this paragraph with the real project writeup.
+        We faced various issues with driver steering in the previous competition cycle, so the
+        primary goal for the steering column and tie rods was to implement various changes that
+        would result in improved driver steering effort. 
+        <p>
+        The area where the most improvement could me made was in the orientation of the steering 
+        column relative to the driver. Our driver's had given us feedback that they were experiences
+        high levels of shoulder fatigue do to the steering wheel being oriented perpendicular to their 
+        bodies. This information was confirmed and quantified through EMG testing on the drivers to
+        identify areas of high fatigue and exertion. 
+        </p>
+        Due to front gearbox packaging constraints, we were unable to change the orientation of the 
+        steering rack to allow for a better steering position, so steering changes had to be made in 
+        the steering column which was more of an auxilary component that allowed for the design flexibility
+        necessary to make impactful changes. 
+      </p>
+        The solution I implemented was the incorporation of a universal-joint into the steering column, allowing
+        for a new degree of flexibility for the steering wheel orientation. I designed various custon universal joints,
+        but we decided to implement a store-bought Apex universal joint due to manufacturing complexity and robustness.
+        </p>
+        This joint allowed for a better steering angle as well as a highly adjustable input-output ratio that established
+        a sinusoidal relation between driver input and wheel output. This relation was tuned to our driver's desires
+        through the clocking of the universal joint in realation to the steering rack.
+      </p>
+        The joint had to a carbon fiber steering column which a bond process optimized for torsional strength.
+        Minor changes were also made to the column to rack interface to reduce fatigue-induced slopping. These 
+        design changes were analysed in Ansys prior to their implementation. 
+        </p>
       </p>
     </section>
 
@@ -45,22 +74,29 @@
       <div class="project-gallery two-column">
         <figure>
           <img src="../images/projects_preview.JPG" alt="Tie Rods image 1">
-          <figcaption>Replace with a caption.</figcaption>
+          <figcaption>TG21 tearing up the racetrack at Baja SAE Arizona.</figcaption>
         </figure>
 
         <figure>
-          <img src="../images/projects_preview.JPG" alt="Tie Rods image 2">
-          <figcaption>Replace with a caption.</figcaption>
+          <img src="../images/tierodcorner.jpg" alt="Tie Rods image 2">
+          <figcaption>Assembled corner.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/steeringcolumn.jpg" alt="Tie Rods image 2">
+          <figcaption>Steering column assembly.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/fullcar.jpg" alt="Tie Rods image 2">
+          <figcaption>Strain gauge testing rig.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/cornermuddy5.jpg" alt="Tie Rods image 2">
+          <figcaption>Tie Rods after all 3 competitions without any failures.</figcaption>
         </figure>
       </div>
-    </section>
-
-    <section class="project-section">
-      <h2 class="project-section-title">Links</h2>
-      <ul class="project-links">
-        <li><a href="#" target="_blank" rel="noopener noreferrer">Add a link here</a></li>
-      </ul>
-    </section>
   </main>
 </body>
 </html>
