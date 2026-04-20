@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tie Rods | Hugo Mazzali</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page-body">
+  <main class="project-page">
+
+    <div class="project-arrow-nav">
+    <a class="project-arrow left-arrow" href="torque-wrench.html" aria-label="Previous project">←</a>
+    <a class="project-arrow right-arrow" href="hondacx500.html" aria-label="Next project">→</a>
+    </div>
+
+    <a class="back-link" href="../index.html#projects">← Back to home</a>
+
+    <header class="project-hero">
+      <p class="project-meta">Mechanical Design / Cornell BAJA SAE</p>
+      <h1 class="project-title">Suspension Links</h1>
+      <p class="project-intro">
+        As a junior on Cornell Baja, I designed, analysed, and am currently manufacturing
+        the front A-arm suspension linkages for TG22, our vehicle for the 2026 Baja SAE season.
+      </p>
+    </header>
+
+    <section class="project-section">
+      <h2 class="project-section-title">Overview</h2>
+      <p>
+        My design set out to address 2 primary issues with the legacy design: manufacturability, and
+        packaging. 
+      </p>
+      <p>
+        Addressing Manufacturability: The previous year's links functioned very well with minimal failures,
+        but maufacturing them was very difficult, especially in relation to their weldability. To improve the weldability,
+        I designed the links to have less sharp kiss-miter angles between the leading, trailing, and cross-members.
+        The upper links in particular posed the most manufacturing difficulty because they are 6061 Aluminum which has
+        a tendency to melt unless welded very carefully. The lower links were less difficult to weld because
+        they are 7075 steel which has a much higher melting temperature.
+      </p>
+      <p>
+        Addressing Packaging: The links underwent many design iterations to address the interference between the 
+        front driveshafts and the lower link member. My original design incorporated an out of plane bend in the front
+        lower member that both avoided the driveshaft clearance issues as well as provided a more direct mounting
+        surface for the front shock tab. Upon analysis, this design passed Ansys, but posed tolerance issues due to the 
+        tolerance stack up posed by introducing an out of plane bend to an already bent member. The stack up resulted in a +7
+        degree tolerance in the bend angle which was unacceptable for the design. For this reason, I decided to
+        go back to the single-bend design, keeping the bend within tolerance and maintinging structure with the cross member.
+        To mitigate the driveline interference, I modified various thicknessess and geometries of the links, while keeping
+        the structural integrety through data-driven cross-member placement. 
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2 class="project-section-title">Details</h2>
+      <div class="project-details">
+        <p><strong>Role:</strong> Design, Analysis, Fabrication, Testing</p>
+        <p><strong>Tools:</strong> SolidWorks, Ansys, Metal Working, Heat Treating</p>
+        <p><strong>Context:</strong> Cornell BAJA SAE</p>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2 class="project-section-title">Gallery: Work in Progress Photos</h2>
+      <div class="project-gallery two-column">
+        <figure>
+          <img src="../images/linkoncar3.JPG" alt="lower links on car 1">
+          <figcaption>Lower members mounted on frame 04/15/26.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/newlinktab.JPG" alt="lower tab">
+          <figcaption>Lower link tab close-up.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/hanginglink.JPG" alt="lower tab">
+          <figcaption>Upper link surface prep.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/linksinpaintbooth.JPG" alt="lower tab">
+          <figcaption>Upper links getting painted.</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2 class="project-section-title">Links</h2>
+      <ul class="project-links">
+        <li><a href="https://www.youtube.com/watch?v=BZFN0cBk7Dg" target="_blank" rel="noopener noreferrer"><strong>Check out this video recap of our last competition cycle (its pretty awesome)<strong></a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
